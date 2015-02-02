@@ -1,0 +1,10 @@
+#!/bin/bash
+
+source $ROOTCOREDIR/scripts/external_download.sh
+
+
+#cd RestFrames
+source setup.sh
+make clean
+make -j $ROOTCORE_NCPUS
+
