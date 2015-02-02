@@ -3,5 +3,5 @@
 echo "IN PRECOMPILE.ROOTCORE ## LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL"
 
 
-#$ROOTCOREDIR/scripts/external_compile.sh
-./external_compile.sh
+$ROOTCOREDIR/scripts/external_compile.sh
+#./external_compile.sh

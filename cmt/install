@@ -2,9 +2,23 @@
 
 source $ROOTCOREDIR/scripts/external_download.sh
 
+if [ ! -f $ROOTCOREBIN/obj/x86_64-slc6-gcc48-opt/Ext_RestFrames/lib/local/include ]; then
+	ln -s $ROOTCOREBIN/obj/x86_64-slc6-gcc48-opt/Ext_RestFrames/lib/local/src/RestFrames/include $ROOTCOREBIN/obj/x86_64-slc6-gcc48-opt/Ext_RestFrames/lib/local/include
+fi
+
+if [ ! -f $ROOTCOREBIN/obj/x86_64-slc6-gcc48-opt/Ext_RestFrames/lib/local/lib ]; then
+	ln -s $ROOTCOREBIN/obj/x86_64-slc6-gcc48-opt/Ext_RestFrames/lib/local/src/RestFrames/lib $ROOTCOREBIN/obj/x86_64-slc6-gcc48-opt/Ext_RestFrames/lib/local/lib
+fi
+
 
 #cd RestFrames
 source setup.sh
 make clean
 make -j $ROOTCORE_NCPUS
+
+
+
+#if [ ! -f $ROOTCOREBIN/lib/x86_64-slc6-gcc48-opt/libRestFrames.so ]; then
+ln -s lib/libRestFrames.so $ROOTCOREBIN/lib/x86_64-slc6-gcc48-opt/libRestFrames.so
+#fi
 
