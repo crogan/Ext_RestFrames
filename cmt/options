@@ -23,7 +23,7 @@ siteroot =
 # modify this.
 
 # the url from which to download
-url = /afs/cern.ch/user/l/leejr/work/public/RestFrames_v-1.tgz
+url = /afs/cern.ch/user/l/leejr/work/public/RestFrames_v-1.1.tgz
 
 # the md5 checksum of the file
 md5sum = ae2d0bc5dd1e015e164d9d14244ad3e5
