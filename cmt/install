@@ -11,14 +11,11 @@ if [ ! -f $ROOTCOREBIN/obj/x86_64-slc6-gcc48-opt/Ext_RestFrames/lib/local/lib ];
 fi
 
 
-#cd RestFrames
 source setup.sh
 make clean
 make -j $ROOTCORE_NCPUS
 
 
-
-#if [ ! -f $ROOTCOREBIN/lib/x86_64-slc6-gcc48-opt/libRestFrames.so ]; then
 ln -s lib/libRestFrames.so $ROOTCOREBIN/lib/x86_64-slc6-gcc48-opt/libRestFrames.so
-#fi
+
 
