@@ -2,38 +2,10 @@
 
 source $ROOTCOREDIR/scripts/external_download.sh
 
-
-
-if [ ! -f $ROOTCOREBIN/obj/x86_64-slc6-gcc48-opt/Ext_RestFrames/lib/local/include ]; then
-	ln -s $ROOTCOREBIN/obj/x86_64-slc6-gcc48-opt/Ext_RestFrames/lib/local/src/RestFrames/include $ROOTCOREBIN/obj/x86_64-slc6-gcc48-opt/Ext_RestFrames/lib/local/include
-fi
-
-if [ ! -f $ROOTCOREBIN/obj/x86_64-slc6-gcc48-opt/Ext_RestFrames/lib/local/lib ]; then
-	ln -s $ROOTCOREBIN/obj/x86_64-slc6-gcc48-opt/Ext_RestFrames/lib/local/src/RestFrames/lib $ROOTCOREBIN/obj/x86_64-slc6-gcc48-opt/Ext_RestFrames/lib/local/lib
-fi
-
-echo "$ROOTCOREBIN/obj/x86_64-slc6-gcc48-opt/Ext_RestFrames/lib/local/lib"
-
-ls $ROOTCOREBIN/obj/x86_64-slc6-gcc48-opt/Ext_RestFrames/lib/local/lib
-ls $ROOTCOREBIN/obj/x86_64-slc6-gcc48-opt/Ext_RestFrames/lib/local/include
-
 source setup.sh
 make clean
 make -j $ROOTCORE_NCPUS
-
-
-cp $target/lib/libRestFrames.so $target/../../../../../lib/x86_64-slc6-gcc48-opt/libRestFrames.so
-
-#cp lib/libRestFrames.so "$target/lib/"
-
-echo "$PWD contains"
-echo $PWD
-ls -lrt $PWD
-
-echo "$PWD/lib contains"
-ls -lrt $PWD/lib
-
-echo "$ROOTCOREBIN/lib/ contains"
-ls $ROOTCOREBIN/lib/
-echo "$ROOTCOREBIN/lib/x86_64-slc6-gcc48-opt/ contains"
-ls -lrt $ROOTCOREBIN/lib/x86_64-slc6-gcc48-opt/
+mkdir -p $target/lib
+cp -a lib/* $target/lib/
+mkdir -p $target/include
+cp -a include/* $target/include/

@@ -1,6 +1,6 @@
 # whether we should always build a local version of the library, even
 # if another version is present
-force_local = no
+force_local = yes
 
 # whether we allow using a system-wide library if present
 allow_global = yes
@@ -33,18 +33,17 @@ md5sum = 7115c625a8af355429295d460b3cce6e
 src_dir = RestFrames
 
 
-
 # the following options should normally not be touched.  they are used
 # by the RootCore scripts that need to compile and link this package
 
 # the name of the package
-name = RestFrames2
+name = RestFrames
 
 # the name of the subdirectory inside the include directory that
 # corresponds to this package.
 incname = RestFrames
 
 # the prefix with which libraries for this package start.
-libname = libRestFrames lib
+libname = libRestFrames
 
 
