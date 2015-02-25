@@ -23,7 +23,7 @@ siteroot =
 # modify this.
 
 # the url from which to download
-url = $ROOTCOREBIN/data/Ext_RestFrames/RestFrames_v-1.1.tgz 
+url = $ROOTCOREBIN/data/Ext_RestFrames/RestFrames.tgz 
 #/afs/cern.ch/user/l/leejr/work/public/RestFrames_v-1.1.tgz https://dl.dropboxusercontent.com/u/10841312/RestFrames_v-1.1.tgz
 
 # the md5 checksum of the file
