@@ -2,10 +2,7 @@
 
 source $ROOTCOREDIR/scripts/external_download.sh
 
-source setup.sh
+./configure --prefix="$target"
 make clean
 make -j $ROOTCORE_NCPUS
-mkdir -p $target/lib
-cp -a lib/* $target/lib/
-mkdir -p $target/include
-cp -a include/* $target/include/
+make install
