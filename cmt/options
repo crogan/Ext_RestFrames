@@ -1,9 +1,9 @@
 # whether we should always build a local version of the library, even
 # if another version is present
-force_local = yes
+force_local = no
 
 # whether we allow using a system-wide library if present
-allow_global = yes
+allow_global = no
 
 # the list of all locations to try.  these should either be a simple
 # directory name or of the form incdir:libdir.  in the former case the
@@ -24,10 +24,13 @@ siteroot =
 url = https://api.github.com/repos/crogan/RestFrames/tarball
 
 # the md5 checksum of the file
-md5sum = b5db79d7b03c0cb20bbcee115c3a569a
+md5sum = f9c247451f9c48bfbc2feaa986921427
 
 # the name of the directory containing the sources
-src_dir = crogan-RestFrames-abb5f32
+src_dir = crogan-RestFrames-8b73bb7
+
+# where the libraries are located
+incdir = inc
 
 # the following options should normally not be touched.  they are used
 # by the RootCore scripts that need to compile and link this package
@@ -40,4 +43,4 @@ name = RestFrames
 incname = RestFrames
 
 # the prefix with which libraries for this package start.
-libname = libRestFrames
+libname = libRestFrames lib
