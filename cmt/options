@@ -24,13 +24,10 @@ siteroot =
 url = https://api.github.com/repos/crogan/RestFrames/tarball
 
 # the md5 checksum of the file
-md5sum = f9c247451f9c48bfbc2feaa986921427
+md5sum = ec0a2ccebcc8d639c0669693c19bb009
 
 # the name of the directory containing the sources
-src_dir = crogan-RestFrames-8b73bb7
-
-# where the libraries are located
-incdir = inc
+src_dir = crogan-RestFrames-a303946
 
 # the following options should normally not be touched.  they are used
 # by the RootCore scripts that need to compile and link this package
