@@ -24,10 +24,10 @@ siteroot =
 url = $ROOTCOREBIN/data/Ext_RestFrames/tarball
 
 # the md5 checksum of the file
-md5sum = 970c530e6912873b760b7081f578f3d5
+md5sum = ed92b7fa7df31883ef9a1e9a3b0a0d3b
 
 # the name of the directory containing the sources
-src_dir = crogan-RestFrames-cb73d60
+src_dir = crogan-RestFrames-cf9e419
 
 
 # the following options should normally not be touched.  they are used
