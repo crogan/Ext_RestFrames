@@ -24,7 +24,7 @@ siteroot =
 url = $ROOTCOREBIN/data/Ext_RestFrames/tarball
 
 # the md5 checksum of the file
-md5sum = 88978e063e721b2ede8c9398e7b781a8
+md5sum = 684664dd49fcf9c85deea102f6926681
 
 # the name of the directory containing the sources
 src_dir = RestFrames
